@@ -2,14 +2,14 @@
 
 An end-to-end data analytics project built on the **Superstore Sales dataset**, covering data ingestion, cleaning, SQL analysis, and an interactive Streamlit dashboard with Plotly visualizations.
 
-> Built as a portfolio project demonstrating the full data analyst workflow: raw data → cleaning → SQL → storytelling dashboard.
+
 
 ---
 
 ## 🖥️ Live Demo
 
-> _Deploy to Render and paste your URL here_  
-> `https://your-app-name.onrender.com`
+> _Deploy to Render_  
+> `[https://your-app-name.onrender.com](https://sales-analytics-zl2m.onrender.com/)`
 
 ---
 
