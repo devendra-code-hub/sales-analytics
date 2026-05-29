@@ -1,8 +1,16 @@
 # dashboard/app.py
+import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
 from sqlalchemy import create_engine
+
+# Auto-load data if DB doesn't exist
+if not os.path.exists("database/sales.db"):
+    os.makedirs("database", exist_ok=True)
+    df_raw = pd.read_csv("data/raw/superstore.csv", encoding="latin-1")
+    engine_init = create_engine("sqlite:///database/sales.db")
+    df_raw.to_sql("sales", engine_init, if_exists="replace", index=False)
 
 st.set_page_config(page_title="Sales Analytics", layout="wide")
 st.title("📊 Sales Analytics Dashboard")
