@@ -18,7 +18,7 @@ __pycache__/
 database/sales.db
 
 # Raw data (too large for GitHub, download manually from Kaggle)
-data/raw/
+# data/raw/
 
 # Processed data (regenerated from notebooks)
 data/processed/
